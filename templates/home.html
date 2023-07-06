@@ -1,0 +1,99 @@
+<center>
+
+{% extends "base.html" %} {% block title %} Journal {% endblock %}
+
+{% block content %}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pathway+Extreme:wght@500&family=Roboto+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
+
+
+
+
+<style>
+
+
+    .web-intro {
+        align="center";
+        margin: 20px;
+    }
+
+
+    .description {
+        font-family: courier new, monospace;
+        font-size: 30px;
+        margin: 25px;
+    }
+
+
+    .fade-in-1st {
+        opacity: 0;
+        animation: fadeInAnimation 2s ease-in-out forwards;
+        font-size: 15px;
+        margin: 20px;
+        font-family: Brushstroke, fantasy;
+
+    }
+     .fade-in-2nd {
+        opacity: 0;
+        animation: fadeInAnimation 3s ease-in-out forwards;
+        font-size: 15px;
+        margin: 20px;
+        font-family: Brushstroke, fantasy;
+
+    }
+     .fade-in-3rd {
+        opacity: 0;
+        animation: fadeInAnimation 4s ease-in-out forwards;
+        font-size: 15px;
+        margin: 20px;
+        font-family: Brushstroke, fantasy;
+
+    }
+
+    @keyframes fadeInAnimation {
+     0& {
+        opacity: 0;
+     }
+     100% {
+        opacity: 1;
+     }
+   }
+
+   .buttons {
+      margin: 30px;
+      padding: 15px;
+
+
+   }
+
+</style>
+
+
+
+<h2 align="center" class="web-intro">Welcome to Journal!</h2>
+<h3 class="description">A new way of journaling!</h3>
+
+
+
+
+
+<h4 class="fade-in-1st">Journal from anywhere on planet earth.</h4>
+<h4 class="fade-in-2nd">No need to worry about losing your precious journals.</h4>
+<h4 class="fade-in-3rd">Easy. Safe. Consistent.</h4>
+
+
+    <div class="buttons">
+        <a href="/login">
+        <button type="button" class="btn btn-light">Login</button>
+        </a>
+        <a href="/sign-up">
+        <button type="button" class="btn btn-dark">Sign Up</button>
+        </a>
+    </div>
+
+</center>
+
+
+
+{% endblock %}
